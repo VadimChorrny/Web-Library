@@ -9,9 +9,9 @@ function header() {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+                <Navbar.Brand href="#home">Library</Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
+                    <Nav.Link href="#home">Post</Nav.Link>
                     <Nav.Link href="#features">Features</Nav.Link>
                     <Nav.Link href="#pricing">Pricing</Nav.Link>
                 </Nav>
@@ -21,7 +21,6 @@ function header() {
                         placeholder="Search"
                         className="mr-sm-2"
                     />
-                    <Button variant="outline-info">Search</Button>
                 </Form>
             </Navbar>
         </div>
