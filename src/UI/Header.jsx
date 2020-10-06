@@ -9,9 +9,9 @@ function header() {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">Library</Navbar.Brand>
+                <Navbar.Brand href="/menu">Library</Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home">Post</Nav.Link>
+                    <Nav.Link href="/home">Post</Nav.Link>
                     <Nav.Link href="#features">Features</Nav.Link>
                     <Nav.Link href="#pricing">Pricing</Nav.Link>
                 </Nav>

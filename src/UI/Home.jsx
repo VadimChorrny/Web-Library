@@ -25,6 +25,7 @@ function Home() {
 
     return (
         <>
+        
             <input
                 value={postsTitle}
                 onChange={(event) => setPostsTitle(event.target.value)}
