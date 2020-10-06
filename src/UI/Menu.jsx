@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
 function Menu() {
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+    };
+
     return (
         <div>
-            <Carousel>
+            <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
-                    <img className="d-block w-100" src="yellow.jpg" />
+                    <img
+                        className="d-block w-100"
+                        src="yellow.jpg"
+                        alt="First slide"
+                    />
                     <Carousel.Caption>
                         <h3>First slide label</h3>
                         <p>
@@ -16,7 +26,11 @@ function Menu() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src="kurs.jpg" />
+                    <img
+                        className="d-block w-100"
+                        src="rentio.png"
+                        alt="Second slide"
+                    />
 
                     <Carousel.Caption>
                         <h3>Second slide label</h3>
@@ -27,7 +41,11 @@ function Menu() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100 h-80" src="site.jpg" />
+                    <img
+                        className="d-block w-100"
+                        src="state.png"
+                        alt="Third slide"
+                    />
 
                     <Carousel.Caption>
                         <h3>Third slide label</h3>

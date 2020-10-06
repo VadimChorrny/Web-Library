@@ -1,14 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./Styles/index.css";
 import * as serviceWorker from "./serviceWorker";
-import Header from "./Components/Header";
-import Menu from "./Components/Gen/Menu";
+import App from "./Pages/App";
 
 ReactDOM.render(
     <React.StrictMode>
-        <Header />
-        <Menu />
+        <App />
     </React.StrictMode>,
     document.getElementById("root")
 );
