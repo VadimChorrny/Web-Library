@@ -13,7 +13,7 @@ function header() {
                 <Nav className="mr-auto">
                     <Nav.Link href="/home">Post</Nav.Link>
                     <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
+                    <Nav.Link href="#pricing">Антоха здарова блять</Nav.Link>
                 </Nav>
                 <Form inline>
                     <FormControl
