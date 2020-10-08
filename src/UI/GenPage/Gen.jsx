@@ -1,38 +1,21 @@
-import React, { Component } from "react";
-import { Tree } from "primereact/tree";
-import { NodeService } from "../service/NodeService";
+import React from "react";
+import ListGroup from "react-bootstrap/ListGroup";
 
-export class Gen extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            nodes: null,
-        };
-
-        this.nodeService = new NodeService();
-    }
-
-    componentDidMount() {
-        this.nodeService
-            .getTreeNodes()
-            .then((data) => this.setState({ nodes: data }));
-    }
-
-    render() {
-        return (
-            <div>
-                <div className="card">
-                    <Tree
-                        value={this.state.nodes}
-                        dragdropScope="demo"
-                        onDragDrop={(event) =>
-                            this.setState({ nodes: event.value })
-                        }
-                    />
-                </div>
-            </div>
-        );
-    }
+function Gen() {
+    return (
+        <div>
+            <ListGroup as="ul">
+                <ListGroup.Item as="li" active>
+                    Cras justo odio
+                </ListGroup.Item>
+                <ListGroup.Item as="li">Dapibus ac facilisis in</ListGroup.Item>
+                <ListGroup.Item as="li" disabled>
+                    Morbi leo risus
+                </ListGroup.Item>
+                <ListGroup.Item as="li">Porta ac consectetur ac</ListGroup.Item>
+            </ListGroup>
+        </div>
+    );
 }
 
 export default Gen;
