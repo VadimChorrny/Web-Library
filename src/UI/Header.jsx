@@ -17,7 +17,9 @@ function header() {
                 </Nav>
 
                 <Form inline>
-                    <Button variant="outline-dark">Sign</Button>
+                    <Nav className="mr-auto">
+                        <Nav.Link href="/login">Sign</Nav.Link>
+                    </Nav>
                 </Form>
             </Navbar>
         </div>
