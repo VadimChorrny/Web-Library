@@ -26,3 +26,13 @@ body {
 .todo i {
     z-index: 2;
 }
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    flex-direction: ;
+}
+
+.Data {
+}

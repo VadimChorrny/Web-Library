@@ -43,18 +43,19 @@ function Home() {
         );
     };
 
-    const togglePost=id=>{
-        setPosts(posts.map(post => {
-            if(post.id === id){
-                post.completed = !post.completed
-            }
-            return post
-        }))
-    }
+    const togglePost = (id) => {
+        setPosts(
+            posts.map((post) => {
+                if (post.id === id) {
+                    post.completed = !post.completed;
+                }
+                return post;
+            })
+        );
+    };
 
     return (
-        <Context.Provider value={{togglePost,removePosts}}>
-            
+        <Context.Provider value={{ togglePost, removePosts }}>
             <div>
                 <input
                     value={postsTitle}
