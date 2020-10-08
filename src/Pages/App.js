@@ -4,13 +4,15 @@ import Header from "../UI/Header";
 import Home from "../UI/GenPage/Home";
 import Menu from "../UI/GenPage/Menu";
 import Data from "../UI/GenPage/Data";
-import Login from "../UI/Auth/Login"
+import Login from "../UI/Auth/Login";
+import Gen from "../UI/GenPage/Gen";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
                 <Header />
+
                 <Switch>
                     <Route exact path="/menu">
                         <Menu />
