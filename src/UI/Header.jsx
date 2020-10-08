@@ -12,15 +12,12 @@ function header() {
                 <Navbar.Brand href="/menu">Library</Navbar.Brand>
                 <Nav className="mr-auto">
                     <Nav.Link href="/home">Post</Nav.Link>
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Антоха здарова блять</Nav.Link>
+                    <Nav.Link href="#">Slides</Nav.Link>
+                    <Nav.Link href="/data">Data</Nav.Link>
                 </Nav>
+
                 <Form inline>
-                    <FormControl
-                        type="text"
-                        placeholder="Search"
-                        className="mr-sm-2"
-                    />
+                    <Button variant="outline-dark">Sign</Button>
                 </Form>
             </Navbar>
         </div>
